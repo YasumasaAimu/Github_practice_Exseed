@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パズル</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>パズル</h1>
+
+    <!-- 設定フォーム -->
+    <div class="settings">
+      <label for="difficulty">難易度:</label>
+      <select id="difficulty">
+        <option value="easy">イージー</option>
+        <option value="normal">ノーマル</option>
+        <option value="hard">ハード</option>
+      </select>
+
+      <label for="distance-input">距離の選択 (km):</label>
+      <input type="number" id="distance-input" placeholder="Enter distance">
+      <button id="add-distance">距離の追加</button>
+    </div>
+
+    <!-- 進捗情報 -->
+    <div class="progress">
+      <p>総距離: <span id="total-distance">0</span> km</p>
+      <p>ピースのアンロック: <span id="pieces-unlocked">0</span>/<span id="total-pieces">0</span></p>
+    </div>
+
+    <!-- パズルタブへのリンクボタン -->
+    <button id="start-puzzle" class="hidden">パズルのスタート</button>
+  </div>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
